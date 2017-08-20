@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Intro a Datos</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+    <style type="text/css">
+      img{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Tipos de datos <a class="btn btn-primary pull-right" href="../index.html">Volver</a></h1>
+            
+            <hr>
+
+            <p>Conoceremos conceptos básicos sobre tipos de datos:</p>
+            <ul>
+              <li><a href="#t1">Tipos de datos conceptuales</a></li>
+              <li><a href="#t2">Tipos de datos para las computadoras</a></li>
+              <li><a href="#t3">Estructuras de datos</a></li>
+            </ul>
+          
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="t1">Tipos de datos conceptuales</h2>
+          </div>
+          <div class="col-md-6">
+            <p>En el ejemplo anterior, podemos darnos cuenta que existen diferentes tipos de datos.</p>
+
+            <ul>
+              <li><strong>Datos cualitativos</strong>: Son todos aquéllos que contestan la pregunta “¿Cuál?” (o “¿Cuáles?”). En este grupo se encuentran datos que indican color, textura, sentimientos, experiencias, los datos resultantes de entrevistas… todos éstos son datos cualitativos.</li>
+              <li><strong>Datos cuantitativos</strong>: Son los datos que se refieren a números. Por ejemplo, el número de pelotas de golf, el tamaño, el precio… o datos como la calificación que obtuviste en tu examen.</li>
+              <li><strong>Datos categóricos</strong>: colocan el objeto por describir en una categoría. En el ejemplo de las bolas de golf, usamos el adjetivo “usadas”; así les otorgamos una categoría (otras pueden ser  “nuevas”, “rotas”, “brillantes”).</li>
+              <li><strong>Datos discretos</strong>: son datos numéricos enteros y sólo se pueden expresar con una cifra. Por ejemplo: el número total de pelotas de golf podría ser 18 (no podría dar como dato discreto que hay 1.9 pelotas de golf). O si en una base de datos asignamos el valor de 1 para pelotas de golf usadas y 2 para pelotas de golf nuevas, los datos discretos sólo pueden ser 1 o 2; no 1.5.</li>
+              <li><strong>Datos continuos</strong>: Son datos numéricos que sí pueden recibir cualquier valor. El tamaño de las pelotas de golf puede ser 10.48 mm o 10.52 mm, o la medida de tu pie puede ser de 25.5 cm.</li>
+            </ul>
+        </div>
+         <div class="col-md-6">
+            <img class="img-responsive" src="http://frontiermedialabs.com/wp-content/uploads/2016/12/man-data-analytics-chalkboard-ss-1920.jpg" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="t2">Tipos de datos para las computadoras</h2>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li><strong>BOOLEAN</strong>: Dos valores posibles: true, false</li>
+              <li><strong>STRING</strong>: Cadenas de texto: "hola" "blancas" "nuevas" "1234" "1234-5678"</li>
+              <li><strong>INTEGER</strong>: Números enteros: 1,2,3774,23452345</li>
+              <li><strong>FLOAT</strong>: Números con punto flotante (reales): 1.0 , 4.22 , 225.2121</li>
+              <li><strong>DATE</strong>: Fechas y horas: "2012-12-11" "15:40" "2018-02-21 21:32"</li>
+              <li><strong>COORDINATES</strong>: Coordenadas geográficas (lat, lng) <a href="https://www.google.cl/maps/place/33%C2%B025'10.7%22S+70%C2%B037'06.9%22W/@-33.4196205,-70.6207737,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-33.419625!4d-70.618585?hl=es-419" target="_blank">-33.419625,-70.618585</a></li>
+              <li><strong>GEOM</strong>: Conjunto de COORDINATES que dibujan una forma geográfica. (region) <a href="https://www.google.cl/maps/place/Regi%C3%B3n+de+Antofagasta/@-23.4797156,-71.1075618,7z/data=!3m1!4b1!4m5!3m4!1s0x96a589a2968e3673:0xed42de5534576c2d!8m2!3d-23.8369104!4d-69.2877535?hl=es-419" target="_blank">-23.4797156,-71.1075618;-23.32323,-71.1234234;-23.122322,-71.342342 ...</a></li>
+            </ul>
+        </div>
+         <div class="col-md-6">
+            <img class="img-responsive" src="https://www.wun.ac.uk/images/researchgroups/data.jpg" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="t3">Estructuras de los datos</h2>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li><strong>DATO</strong>: Atómico e indivisible. Edad: 33</li>
+              <li><strong>COLECCION</strong>: Colección de datos. Edades: [22,32,45,32,12,...]</li>
+              <li><strong>OBJETO</strong>: Entidad con datos como propiedades: (Nombre: Pablo, Apellido: Paladino, Edad: 34)</li>
+              <li><strong>COLECCIÓN DE OBJETOS</strong>: Colección de objetos: [(Nombre: Pablo, Apellido: Paladino, Edad: 34),(Nombre: Pepe, Apellido: Pompín, Edad: 36),...] </li>
+            </ul>
+        </div>
+         <div class="col-md-6">
+            <img class="img-responsive" src="http://t1.daumcdn.net/brunch/service/user/1dEO/image/wIHS8MC-s6s4_4yC7QOYCenVoo4.jpg" />
+          </div>
+        </div>
+
+        <hr>
+        <p><a href="https://es.schoolofdata.org/cursos/#Fundamentos_de_los_datos" target="_blank">Más información</a></p>
+        <p class="text-right"><a class="btn btn-primary" href="../index.html">Volver</a></h1>
+
+    </div>
+
+    <hr/>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Pablo H. Paladino - <a href="http://twitter.com/palamago">@palamago</a></p>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        hljs.initHighlightingOnLoad();
+      });
+    </script>
+
+  </body>
+</html>

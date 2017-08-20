@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Intro a Datos</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+    <style type="text/css">
+      img{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Introducción a datos <a class="btn btn-primary pull-right" href="../index.html">Volver</a></h1>
+            
+            <hr>
+
+            <p>Conoceremos conceptos básicos sobre datos:</p>
+            <ul>
+              <li><a href="#t1">¿Qué es un dato?</a></li>
+              <li><a href="#t2">Datos, información y conocimiento</a></li>
+              <li><a href="#t3">Preguntas y exploración</a></li>
+              <li><a href="#t4">Humanos vs Computadoras</a></li>
+            </ul>
+          
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="t1">¿Qué es un dato?</h2>
+          </div>
+          <div class="col-md-6">
+            <p>Los datos están alrededor de nosotros. ¿Pero qué son exactamente? Los datos indican un valor asignado a las cosas.</p>
+            <p>¿Qué podemos decir sobre la imagen? Son pelotas de golf, ¿verdad? Entonces, uno de los puntos claves es que son usadas para jugar golf. El golf es un deporte.</p>
+            <p>Estos datos nos ayudan a poner en contexto a las pelotas. Pero la imagen nos dice mucho más cosas: son blancas, están usadas, tienen el mismo tamaño, son muchas, y probablemente tienen un valor económico, emocional, etc.</p>
+            <p>Las cosas más cotidianas e insignificantes tienen muchos datos inherentes a ellas. Nosotros también. Tenemos un nombre, apellidos, fecha de nacimiento, peso, altura, edad, nacionalidad. Todos éstos son datos.</p>
+            <p>Cualitativos, cuántitativos.</p>
+        </div>
+         <div class="col-md-6">
+            <img class="img-responsive" src="http://www.golfmagic.com/sites/default/files/golf-ball-dimples.jpg" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="t2">Datos, información y conocimiento</h2>
+          </div>
+          <div class="col-md-6">
+            <p>Existen algunas diferencias entre estos conceptos que es interesante destacar:</p>
+            <ul>
+              <li><strong>DATO</strong> = hecho</li>
+              <li><strong>INFORMACIÓN</strong> = <strong>DATO</strong> + interpretación</li>
+              <li><strong>CONOCIMIENTO</strong> = <strong>INFORMACIÓN</strong> + (aprendizaje,aplicación,comprensión)</li>
+            </ul>
+            <p>Sobre el ejemplo de la pelotita de golf, un dato es que su diámetro es 43mm:</p>
+            <ul>
+              <li><strong>DATO</strong>: 43mm</li>
+              <li><strong>INFORMACIÓN</strong>: existen regulaciones que indican que el diámetro mínimo debe ser 42.67mm, por lo que 43mm es válido.</li>
+              <li><strong>CONOCIMIENTO</strong>: Aplicamos validaciones a todas las pelotitas y podemos identificar aquellas que no cumplen la regla.</li>
+            </ul>
+        </div>
+         <div class="col-md-6">
+            <img class="img-responsive" src="http://i.ebayimg.com/00/s/NTUxWDg3Mg==/z/FLYAAOSwFTRTqrUf/$_32.JPG?set_id=880000500F" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="t3">Preguntas y exploración</h2>
+          </div>
+          <div class="col-md-6">
+            <p>La motivación para descargar y visualizar un dataset debe partir siempre de:</p>
+            <ul>
+              <li>Necesidad</li>
+              <li>Preguntas</li>
+              <li>Exploración</li>
+            </ul>
+            <p>Cualquiera sea la motivación hay que estar atentos a:</p>
+            <ul>
+              <li>Patrones inesperados</li>
+              <li>Datos no esperado</li>
+              <li>Errores</li>
+              <li>Falsos positivos</li>
+            </ul>
+        </div>
+         <div class="col-md-6">
+            <img class="img-responsive" src="https://i.giphy.com/a5viI92PAF89q.gif" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="t4">Humanos vs Computadoras</h2>
+          </div>
+          <div class="col-md-6">
+            <p>La organización inicial de los datos puede ser:</p>
+            <ul>
+              <li>No estructurados</li>
+              <li>Estructurados</li>
+            </ul>
+            <p><strong>No estructurados</strong>: "Tenemos 5 pelotas de golf blancas, usadas, con un diámetro de 43mm, y que cuestan 50 centavos cada una" puede ser entendida por un humano, pero, para una computadora, es difícil de entender. De igual manera, los PDFs y las imágenes escaneadas pueden contener información útil para el ojo humano, pero no son legibles para la computadora.</p>
+            <p><strong>Estructurados</strong>: Si deseas que tu computadora procese y analice tus datos, éstos deben de ser presentados de la manera correcta. Esto quiere decir que deben de estar estructurados en una forma legible para las computadoras. Ejemplos?</p>
+        </div>
+         <div class="col-md-6">
+            <img class="img-responsive" src="https://i.pinimg.com/originals/82/6f/3a/826f3a5a9011ec9804cc4eefc462fe30.jpg" />
+          </div>
+        </div>
+
+        <hr>
+        <p><a href="https://es.schoolofdata.org/cursos/#Fundamentos_de_los_datos" target="_blank">Más información</a></p>
+        <p class="text-right"><a class="btn btn-primary" href="../index.html">Volver</a></h1>
+
+    </div>
+
+    <hr/>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Pablo H. Paladino - <a href="http://twitter.com/palamago">@palamago</a></p>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        hljs.initHighlightingOnLoad();
+      });
+    </script>
+
+  </body>
+</html>

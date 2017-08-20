@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Intro a Datos</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+    <style type="text/css">
+      img{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Formatos de datasets <a class="btn btn-primary pull-right" href="../index.html">Volver</a></h1>
+            
+            <hr>
+
+            <p>Conoceremos conceptos básicos sobre formatos de datasets:</p>
+            <ul>
+              <li><a href="#t1">Tabular</a></li>
+              <li><a href="#t2">CSV, TSV: Estructuras tabulares</a></li>
+              <li><a href="#t3">XML, JSON: Estructuras anidadas</a></li>
+            </ul>
+          
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="t1">Tabular</h2>
+          </div>
+          <div class="col-md-6">
+            <p>Dispuesto en filas y columnas como puede ser cualquier archivo Excel o Google Spreadsheet. Propietario: se requiere un programa especial para abrirlo.</p>
+            <p>Indetificamos las siguientes partes:</p>
+
+            <ul>
+              <li><strong>Cabecera</strong>: Primera fila que describe las propiedades.</li>
+              <li><strong>Fila</strong>: Valores de las propiedades de una observación. Entidad: película</li>
+              <li><strong>Columna</strong>: Valores para todas las observaciones de una determinada propiedad. Ej: Año</li>
+              <li><strong>Dato</strong>: Intersección entre fila y columna.</li>
+            </ul>
+
+            <table class="table table-bordered">
+            <thead> 
+              <tr> 
+                <th>Película</th>
+                <th>Año</th>
+                <th>Oscars</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Ben-Hur</td><td>1959</td><td>11</td>
+              <tr><td>Titanic</td><td>1997</td><td>11</td></tr>
+              <tr><td>El Señor de los Anillos: el retorno del Rey</td><td>2003</td><td>11</td></tr>
+              <tr><td>Lo que el viento se llevó</td><td>1939</td><td>10</td></tr>
+              <tr><td>West Side Story</td><td>1061</td><td>10</td></tr>
+            </tbody>
+            </table>
+        </div>
+         <div class="col-md-6">
+            <img class="img-responsive" src="http://entremetaforas.es/wp-content/uploads/2016/02/1327800728_06_the_lord_of_ben_titanic.jpg" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="t2">CSV , TSV</h2>
+          </div>
+          <div class="col-md-6">
+            <p><strong>CSV</strong>: Comma Separated Value. Archivos de texto con información tabular. Formato libre, liviano y abierto. Puede ser leído usando un editor de texto. Información en forma de tabla. Las columnas se separa con "," y las filas con "Enter".</p>
+            <p><pre><code class="csv">"Película","Año","Oscars"
+"Ben-Hur",1959,11
+"Titanic",1997,11
+"El Señor de los Anillos: el retorno del Rey",2003,11
+"Lo que el viento se llevó",1939,10
+"West Side Story",1061,10</code></pre></p>
+            <p><strong>TSV</strong>: Tab Separated Value. Misma estructura que <strong>CSV</strong> pero las columnas se separan con "TAB".</p>
+            <p><pre><code class="csv">"Película"  "Año" "Oscars"
+"Ben-Hur" 1959  11
+"Titanic" 1997  11
+"El Señor de los Anillos: el retorno del Rey" 2003  11
+"Lo que el viento se llevó" 1939  10
+"West Side Story" 1061  10</code></pre></p>
+        </div>
+         <div class="col-md-6">
+            <img class="img-responsive" src="https://i.giphy.com/8dYmJ6Buo3lYY.gif" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2 id="t3">XML</h2>
+            <p><strong>XML</strong>: eXtensible Markup Language. Se define estructura mediante el uso de tags. El lenguaje HTML de la web está basado en XML.</p>
+            <p><pre><code class="xml">&lt;pelicula&gt;
+  &lt;nombre&gt;Ben-Hur&lt;/nombre&gt;
+  &lt;anio&gt;1959&lt;/anio&gt;
+  &lt;oscars&gt;11&lt;/oscars&gt;
+&lt;/pelicula&gt;
+</code></pre></p>
+            <p><strong>XML</strong> nos permite crear colecciones:</p>
+            <p><pre><code class="xml">&lt;peliculas&gt;
+  &lt;pelicula&gt;
+    &lt;nombre&gt;Ben-Hur&lt;/nombre&gt;
+    &lt;anio&gt;1959&lt;/anio&gt;
+    &lt;oscars&gt;11&lt;/oscars&gt;
+  &lt;/pelicula&gt;
+  &lt;pelicula&gt;
+    &lt;nombre&gt;Titanic&lt;/nombre&gt;
+    &lt;anio&gt;1997&lt;/anio&gt;
+    &lt;oscars&gt;11&lt;/oscars&gt;
+  &lt;/pelicula&gt;
+  &lt;pelicula&gt;
+    ...
+  &lt;/pelicula&gt;
+  &lt;pelicula&gt;
+    ...
+  &lt;/pelicula&gt;
+&lt;/peliculas&gt;
+</code></pre></p>
+            
+            <p><strong>XML</strong> nos permite también crear estructuras de datos anidadas.</p>
+<p><pre><code class="xml">&lt;pelicula&gt;
+  &lt;nombre&gt;Titanic&lt;/nombre&gt;
+  &lt;anio&gt;1997&lt;/anio&gt;
+  &lt;oscars&gt;11&lt;/oscars&gt;
+  &lt;director&gt;
+    &lt;nombre&gt;James&lt;/nombre&gt;
+    &lt;apellido&gt;Cameron&lt;/apellido&gt;
+  &lt;/director&gt;
+&lt;/pelicula&gt;
+</code></pre></p>
+
+            <p><strong>XML</strong> nos permite también combinar estructuras de datos anidadas con colecciones.</p>
+
+<p><pre><code class="xml">&lt;peliculas&gt;
+  &lt;pelicula&gt;
+    &lt;nombre&gt;Titanic&lt;/nombre&gt;
+    &lt;anio&gt;1997&lt;/anio&gt;
+    &lt;oscars&gt;11&lt;/oscars&gt;
+    &lt;director&gt;
+      &lt;nombre&gt;James&lt;/nombre&gt;
+      &lt;apellido&gt;Cameron&lt;/apellido&gt;
+    &lt;/director&gt;
+    &lt;protagonistas&gt;
+      &lt;persona&gt;
+        &lt;nombre&gt;Leonardo&lt;/nombre&gt;
+        &lt;apellido&gt;Di Caprio&lt;/apellido&gt;
+      &lt;/persona&gt;
+      &lt;persona&gt;
+        &lt;nombre&gt;Kate&lt;/nombre&gt;
+        &lt;apellido&gt;Winslet&lt;/apellido&gt;
+      &lt;/persona&gt;
+    &lt;/protagonistas&gt;
+  &lt;/pelicula&gt;
+  &lt;pelicula&gt;
+    ...
+  &lt;/pelicula&gt;
+  &lt;pelicula&gt;
+    ...
+  &lt;/pelicula&gt;
+&lt;/peliculas&gt;
+</code></pre></p>
+          <p>Ver además: <a href="http://www.xmlvalidation.com/" target="_blank">XML validator</a></p>
+        </div>
+         <div class="col-md-6">
+            <h2 id="t2">JSON</h2>
+            <p><strong>JSON</strong>: JavaScript Object Notation. Se define estructura mediante el uso llaves, corchetes y comas usados en el lenguaje Javascript.</p>
+            <p><pre><code class="json">{
+  "nombre":"Ben-Hur",
+  "anio":1959,
+  "oscars":11
+}
+</code></pre></p>
+            <p><strong>JSON</strong> nos permite crear colecciones:</p>
+            <p><pre><code class="json">[
+  {
+    "nombre":"Ben-Hur",
+    "anio":1959,
+    "oscars":11
+  },
+  {
+    "nombre":"Titanic",
+    "anio":1997,
+    "oscars":11
+  },
+  {
+  ...
+  },
+  {
+  ...
+  }
+]
+</code></pre></p>
+            
+            <p><strong>JSON</strong> nos permite también crear estructuras de datos anidadas.</p>
+<p><pre><code class="json">{
+  "nombre":"Titanic",
+  "anio":1997,
+  "oscars":11,
+  "director": {
+    "nombre": "James",
+    "apellido": "Cameron"
+  }
+}</code></pre></p>
+
+            <p><strong>JSON</strong> nos permite también combinar estructuras de datos anidadas con colecciones.</p>
+
+<p><pre><code class="json">[
+  {
+    "nombre":"Titanic",
+    "anio":1997,
+    "oscars":11,
+    "director": {
+      "nombre": "James",
+      "apellido": "Cameron"
+    },
+    "protagonistas":[
+      {
+        "nombre": "Leonardo",
+        "apellido": "Di Caprio"
+      },
+      {
+        "nombre": "Kate",
+        "apellido": "Winslet"
+      }
+    ]
+  },
+  {
+  ...
+  },
+  {
+  ...
+  }
+]</code></pre></p>
+        
+        <p>Ver además: <a href="https://jsonlint.com/" target="_blank">JSON validator</a></p>
+        </div>
+      </div>
+
+
+        <hr>
+        <p class="text-right"><a class="btn btn-primary" href="../index.html">Volver</a></h1>
+
+    </div>
+
+    <hr/>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Pablo H. Paladino - <a href="http://twitter.com/palamago">@palamago</a></p>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        hljs.initHighlightingOnLoad();
+      });
+    </script>
+
+  </body>
+</html>
