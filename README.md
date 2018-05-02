@@ -1,6 +1,6 @@
 # Introducción a Datos
 
-Ver online: [aquí](https://visualizacion-uc.github.io/introduccion-datos/index.html)
+Ver online: [aquí](https://visualizacionuc.github.io/introduccion-datos/index.html)
 
 ## Contenido
 
